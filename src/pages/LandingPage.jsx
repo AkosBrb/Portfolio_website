@@ -17,10 +17,10 @@ function LandingPage() {
           diverse portfolio and if you feel like it, feel free to contact me.
         </p>
         <div className="btn-container">
-          <Link to="#" className="main-btn">
+          <Link to="#" className="btn">
             Hire me
           </Link>
-          <Link to="#" className="main-btn">
+          <Link to="#" className="btn">
             Contact
           </Link>
         </div>

@@ -37,7 +37,7 @@
   width: 34.5rem;
   height: 5rem;
 }
-.btn-container .main-btn {
+.btn-container .btn {
   position: relative;
   display: inline-flex;
   justify-content: center;
@@ -56,20 +56,20 @@
   transition: .5s;
   text-decoration: none;
 }
-.btn-container .main-btn:hover {
+.btn-container .btn:hover {
   color: var(--main-color)
 }
-.btn-container .main-btn:nth-child(2) {
+.btn-container .btn:nth-child(2) {
   background: transparent;
   color: var(--main-color);
 }
-.btn-container .main-btn:nth-child(2):hover {
+.btn-container .btn:nth-child(2):hover {
   color: var(--bg-color);
 }
-.btn-container .main-btn:nth-child(2)::before {
+.btn-container .btn:nth-child(2)::before {
   background: var(--main-color);
 }
-.btn-container .main-btn::before {
+.btn-container .btn::before {
   content: '';
   position: absolute;
   top: 0;
@@ -80,7 +80,7 @@
   z-index: -1;
   transition: .5s;
 }
-.btn-container .main-btn:hover::before {
+.btn-container .btn:hover::before {
   width: 100%;
 }
 .home-img-hover {
