@@ -1,5 +1,7 @@
 import ReactDOM from 'react-dom/client';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './main.css';
 import Layout from './Layout';
 import LandingPage from './pages/LandingPage';
 import About from './pages/About';
