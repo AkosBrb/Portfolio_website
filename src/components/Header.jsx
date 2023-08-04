@@ -1,6 +1,3 @@
-import { NavLink } from 'react-router-dom';
-import './Header.css';
-
 function Header() {
   return (
     <header className="header-container">
@@ -8,16 +5,16 @@ function Header() {
       <nav>
         <ul className="nav-links-container">
           <li>
-            <NavLink to="/">Home</NavLink>
+            <a href="#landing-page">Home</a>
           </li>
           <li>
-            <NavLink to="about">About</NavLink>
+            <a href="#about">About</a>
           </li>
           <li>
-            <NavLink to="skills">Skills</NavLink>
+            <a href="#skills">Skills</a>
           </li>
           <li>
-            <NavLink to="contact">Contact</NavLink>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </nav>

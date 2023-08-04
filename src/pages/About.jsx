@@ -1,10 +1,8 @@
-import { Link } from 'react-router-dom';
-import './About.css';
 import aboutImg from '../assets/pics/about.png';
 
 function About() {
   return (
-    <section className="about-container">
+    <section className="about-container" id="about">
       <h2 className="about-heading">
         About <span>Me</span>
       </h2>
@@ -24,9 +22,9 @@ function About() {
         </p>
       </div>
       <div className="btn-container btns">
-        <Link className="btn" to="#">
+        <a className="btn" href="#">
           Read More
-        </Link>
+        </a>
       </div>
     </section>
   );

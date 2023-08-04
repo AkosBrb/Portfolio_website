@@ -1,9 +1,6 @@
-import { Link } from 'react-router-dom';
-import './LandingPage.css';
-
 function LandingPage() {
   return (
-    <section className="landing-page-container">
+    <section className="landing-page-container" id="landing-page">
       <div className="introduction-container">
         <h1>
           Hi, I'm <span>Ákos Borbély</span>
@@ -17,12 +14,12 @@ function LandingPage() {
           diverse portfolio and if you feel like it, feel free to contact me.
         </p>
         <div className="btn-container">
-          <Link to="#" className="btn">
+          <a href="#" className="btn">
             Hire me
-          </Link>
-          <Link to="#" className="btn">
+          </a>
+          <a to="#contact" className="btn">
             Contact
-          </Link>
+          </a>
         </div>
         <div className="home-img-hover" />
       </div>
