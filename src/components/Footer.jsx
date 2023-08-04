@@ -1,5 +1,5 @@
 import { CiFacebook, CiLinkedin } from 'react-icons/ci';
-import { BsGithub } from 'react-icons/bs';
+import { BsGithub, BsFillArrowUpSquareFill } from 'react-icons/bs';
 
 function Footer() {
   return (
@@ -21,6 +21,11 @@ function Footer() {
           rel="noreferrer"
         >
           <CiLinkedin size={50} color="#00abf0" />
+        </a>
+      </div>
+      <div className="nav-back-container">
+        <a href="#landing-page">
+          <BsFillArrowUpSquareFill size={42} color="#00abf0" />
         </a>
       </div>
     </footer>
