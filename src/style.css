@@ -200,13 +200,13 @@ body {
   padding-bottom: 6rem;
 }
 
-.about-heading {
+.heading {
   font-size: 5rem;
   margin-bottom: 3rem;
   text-align: center;
 }
 
-.about-heading span {
+.heading span {
   color: var(--main-color)
 }
 
@@ -258,14 +258,146 @@ body {
   width: 15rem;
 }
 
+/* -------------- EXPERIENCE DESIGN -------------- */
+
+.experience-container {
+  min-height: var(--container-height);
+  padding: 10rem 9%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: auto;
+  padding-bottom: 5rem;
+}
+
+.experience-column .title {
+  font-size: 2.5rem;
+  margin: 0 0 1.5rem 2rem;
+}
+
+.experience-column .experience-box {
+  border-left: .2rem solid var(--main-color);
+}
+
+.experience-box .experience-content {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.experience-box .experience-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -1.1rem;
+  width: 2rem;
+  height: 2rem;
+  background: var(--main-color);
+  border-radius: 50%;
+}
+
+.experience-content .content {
+  position: relative;
+  padding: 1.5rem;
+  border: .2rem solid var(--main-color);
+  border-radius: .6rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.experience-content .content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--second-bg-color);
+  z-index: -1;
+  transition: .5s;
+}
+
+.experience-content .content:hover::before {
+  width: 100%;
+}
+
+.experience-content .content .year {
+  vertical-align: middle;
+  font-size: 1.5rem;
+  color: var(--main-color);
+  padding-bottom: .5rem;
+}
+
+.experience-content .content .year svg {
+  vertical-align: text-bottom;
+  padding-right: .5rem;
+}
+
+.experience-content .content h3 {
+  font-size: 2rem;
+}
+
+.experience-content .content p {
+  font-size: 1.6rem;
+  padding-top: .5rem;
+}
+
+/* -------------- SKILLS DESIGN -------------- */
+
+
+
+
 /* -------------- FOOTER DESIGN -------------- */
 
 footer {
+  display: flex;
+  justify-content: space-between;
   padding: 0 9%;
 }
 .social-links-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 25rem;
+  width: 25rem;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translateY(-1.3rem);
+  }
+  60% {
+    transform: translateY(-.0rem);
+  }
+  70% {
+    transform: translateY(-.6rem);
+  }
+  80% {
+    transform: translateY(-.0rem);
+  }
+  90% {
+    transform: translateY(-.4rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes up {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translateY(-1.3rem);
+  }
+}
+
+.social-links-container a svg:hover {
+  animation: bounce 1.3s infinite;
+}
+
+.nav-back-container a svg:hover {
+  animation: up 1s forwards;
 }
