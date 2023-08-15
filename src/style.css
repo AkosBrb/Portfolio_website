@@ -344,7 +344,46 @@ body {
 
 /* -------------- SKILLS DESIGN -------------- */
 
+.skills-container {
+  min-height: var(--container-height);
+  padding: 10rem 9%;
+}
 
+.skills-icons-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 7rem;
+  max-width: 100rem;
+  margin: auto;
+  padding-top: 8rem;
+}
+
+.img-container h3 {
+  padding: 1rem;
+  font-size: 2.5rem;
+  text-align: center;
+  position: relative;
+}
+
+.img-container h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: .3rem;
+  width: 100%;
+  background: var(--main-color);
+}
+
+.skills-icons-container .img-container {
+  justify-self: center;
+}
+
+.img-container img {
+  width: 15rem;
+}
 
 
 /* -------------- FOOTER DESIGN -------------- */
